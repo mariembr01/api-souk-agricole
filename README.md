@@ -56,3 +56,61 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# api-souk-agricole
+
+## Description
+
+## Les quatre rôles
+
+## Installation
+
+### Bash
+
+```bash
+git clone https://github.com/VOTRE-COMPTE/api-souk-agricole.git
+cd api-souk-agricole
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate:fresh --seed
+php artisan test
+php artisan serve
+```
+
+### PowerShell
+
+```powershell
+git clone https://github.com/VOTRE-COMPTE/api-souk-agricole.git
+cd api-souk-agricole
+composer install
+copy .env.example .env
+php artisan key:generate
+php artisan migrate:fresh --seed
+php artisan test
+php artisan serve
+```
+
+## Comptes de test
+
+## Endpoints
+
+## Authentification par jeton
+
+## Codes d'erreur
+
+## Exemple curl.exe
+
+```bash
+curl.exe -X POST -H "Accept: application/json" -H "Authorization: Bearer VOTRE_JETON" http://localhost:8000/api/logout
+```
+
+## Collection Postman
+
+## Choix d'architecture
+
+### Pourquoi la ressource principale appartient-elle à l'utilisateur, et que protège la Policy ?
+
+### À quel besoin réel d'un utilisateur de l'API répond le filtre ?
+
+### Quelle requête produirait un problème N+1 sans with(), et comment l'avez-vous évité ?
